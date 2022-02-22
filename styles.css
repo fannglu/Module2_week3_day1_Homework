@@ -24,7 +24,6 @@ header {
   position: relative;
   width: 120px;
   height: 100px;
-  
 }
 .logo img {
   width: 100px;
@@ -39,15 +38,13 @@ header {
 .main-menu {
   font-weight: 400;
   margin-left: 227px;
-  width: auto;
-  height: auto;
+ 
 }
-
-
-/* nav {
-  height: 100px;
-} */
-.main-menu .nav-item{
+.navbar-main .navbar {
+  height: auto;
+  width: auto;
+}
+.main-menu .nav-item {
   list-style-type: none;
   display: inline-block;
   padding-left: 25px;
@@ -59,12 +56,11 @@ header {
   font-size: 14px;
   /* width: 100px; */
   /* text-align: center; */
-
 }
-
 .nav-link {
   text-decoration: none;
   color: #888;
+  padding: 0;
 }
 .nav-link:hover {
   color: #9ed034;
@@ -78,18 +74,13 @@ header {
 }
 .navbar-main {
   margin: 0 auto;
-  background-color: rgb(255, 255, 255, 0.8) !important;
-  width: 60%;
+  background-color: rgba(8, 8, 8, 0.5) !important;
+  width: 80%;
 }
 .navbar-expand-lg {
   justify-content: flex-end;
 }
-.nav-link {
-   padding: 0;
-}
-/* .container-fluid {
-    padding: 0;
-} */
+
 /* Main */
 main {
   padding: 3em 6em 3em 5.5em;
@@ -212,12 +203,11 @@ footer #nondisclaimer .social .fa-instagram {
 
 /* Cliffs */
 
-#cliff .row{
-   /* display: flex;
+#cliff .row {
+  /* display: flex;
    margin: 2.5em 1.2em 0 1.2em;
    justify-content: center; */
-   text-align: center;
-   
+  text-align: center;
 }
 
 figcaption {
@@ -234,7 +224,6 @@ figcaption {
 table {
   width: 1000px;
   margin: 4em auto 0 auto;
-
 }
 
 caption {
@@ -286,7 +275,6 @@ div #displaySelected {
   border: 2px solid #9ed034;
   padding: 0.75em;
   margin-bottom: 2em;
- 
 }
 #activities main #displaySelected #result,
 #activities main #displaySelected #sendinfo {
@@ -382,24 +370,24 @@ form .randomcode #codes {
   background-color: #c0c0c0;
 }
 
-form .button {
-  width: 49%;
+form .btn {
   text-align: right;
-}
-
-form .button input {
-  width: 8em;
   height: 2.5em;
   font-size: 1.2em;
   font-weight: bold;
-  /*background-color: rgb(73, 119, 209, 0.4);*/
+  /* background-color: rgb(73, 119, 209, 0.4); */
   color: rgba(255, 255, 255, 0.5);
   border: none;
+  margin-left: 16em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  width: 6em;
+  text-align: center;
 }
+
 /* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
 
 /* Media Queries */
-
 
 @media (max-width: 768px) {
   .navbar-main {
@@ -417,7 +405,6 @@ form .button input {
     text-align: center;
     float: none;
   }
- 
 }
 
 @media (max-width: 992px) {
@@ -445,5 +432,4 @@ form .button input {
     padding: 25px;
     margin-top: 1em;
   }
- 
 }
