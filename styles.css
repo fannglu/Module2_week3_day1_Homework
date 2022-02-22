@@ -358,7 +358,7 @@ form .textbox input {
   margin: 0.25em 0 1em 0;
   display: block;
   height: 2em;
-  width: 96%;
+  width: 60%;
 }
 
 form .selectmenu select {
@@ -370,14 +370,15 @@ form .selectmenu select {
 form .commentbox textarea {
   display: block;
   height: 17em;
-  width: 96%;
+  width: 60%;
   resize: none;
 }
 
 form .randomcode {
-  width: 51.5%;
+  width: 30%;
   /* text-align: right; */
   display: inline-flex;
+  margin-left: 31%;
 }
 
 form .randomcode input {
@@ -401,7 +402,7 @@ form .btn {
   border: none;
   display: block;
   text-align: center;
-  
+  margin-left: 50%;
 }
 
 /* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
