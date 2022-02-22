@@ -1,24 +1,40 @@
 /* Header */
 header {
   width: 100%;
-  min-height: 400px;
-  padding-top: 3em;
+  /* height: 100%; */
 }
-#home header {
+#home .bg {
   background: no-repeat lightgrey url(images/cliff_ocean.jpg);
   background-size: 1500px;
+  background-size: cover;
+  min-height: 800px;
+  background-position: center;
+  padding-top: 3em;
 }
-#cliffs header {
+#cliffs .bg {
   background: no-repeat lightgrey url(images/forest_cliff.jpg);
   background-size: 1500px;
+  background-size: cover;
+  min-height: 800px;
+  background-position: center;
+  padding-top: 3em;
 }
-#activities header {
+
+#activities .bg {
   background: no-repeat lightgrey url(images/runfly.jpg);
   background-size: 1500px;
+  background-size: cover;
+  min-height: 800px;
+  background-position: center;
+  padding-top: 3em;
 }
-#contact header {
+#contact .bg {
   background: no-repeat lightgrey url(images/cliff_rock.jpg);
   background-size: 1500px;
+  background-size: cover;
+  min-height: 800px;
+  background-position: center;
+  padding-top: 3em;
 }
 .logo {
   position: relative;
@@ -35,15 +51,11 @@ header {
 }
 
 /* Navigation */
-.main-menu {
-  font-weight: 400;
-  margin-left: 227px;
- 
-}
-.navbar-main .navbar {
-  height: auto;
-  width: auto;
-}
+/* .main-menu {
+  background-color: rgba(8, 8, 8, 0.5) !important;
+  margin-top: 8px;
+  position: absolute;
+} */
 .main-menu .nav-item {
   list-style-type: none;
   display: inline-block;
@@ -59,7 +71,7 @@ header {
 }
 .nav-link {
   text-decoration: none;
-  color: #888;
+  color: rgb(255, 255, 255);
   padding: 0;
 }
 .nav-link:hover {
@@ -74,11 +86,15 @@ header {
 }
 .navbar-main {
   margin: 0 auto;
-  background-color: rgba(8, 8, 8, 0.5) !important;
-  width: 80%;
+  background-color: rgba(38, 41, 61, 0.7) !important;
+  width: 60%;
+  display: flex;
 }
 .navbar-expand-lg {
   justify-content: flex-end;
+}
+.navbar-main .navbar {
+  width: 100%;
 }
 
 /* Main */
@@ -327,36 +343,41 @@ form .textbox,
 form .radios,
 form .selectmenu,
 form .commentbox,
-form .button {
+form .btn,
+form .randomcode {
   margin: 1.5em 0 1.5em 2em;
 }
-
+form .radios .form-check {
+  display: inline-block;
+}
 form label {
   font-weight: bold;
 }
 
 form .textbox input {
-  margin: 0 0 1em 0;
+  margin: 0.25em 0 1em 0;
   display: block;
   height: 2em;
-  width: 50%;
+  width: 96%;
 }
 
 form .selectmenu select {
   width: 12em;
-  padding-left: 3em;
+  text-align: center;
+  display: inline-block;
 }
 
 form .commentbox textarea {
   display: block;
   height: 17em;
-  width: 50%;
+  width: 96%;
   resize: none;
 }
 
 form .randomcode {
   width: 51.5%;
-  text-align: right;
+  /* text-align: right; */
+  display: inline-flex;
 }
 
 form .randomcode input {
@@ -365,24 +386,22 @@ form .randomcode input {
 }
 
 form .randomcode #codes {
-  display: inline;
+ 
   padding: 1em;
   background-color: #c0c0c0;
 }
 
 form .btn {
-  text-align: right;
+  /* text-align: right; */
   height: 2.5em;
   font-size: 1.2em;
   font-weight: bold;
   /* background-color: rgb(73, 119, 209, 0.4); */
-  color: rgba(255, 255, 255, 0.5);
+  /* color: rgba(255, 255, 255, 0.5); */
   border: none;
-  margin-left: 16em;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  width: 6em;
+  display: block;
   text-align: center;
+  
 }
 
 /* ACTIVATE BELOW WHEN TESTING NAVIGATION AND OTHERS FOR RWD */
@@ -391,7 +410,7 @@ form .btn {
 
 @media (max-width: 768px) {
   .navbar-main {
-    width: 85%;
+    width: 60%;
   }
   footer #nondisclaimer .copy {
     padding: 3.5em 0em 3.5em 0em;
@@ -417,9 +436,10 @@ form .btn {
   }
   .main-menu {
     width: 200px;
-    background-color: rgb(255, 255, 255);
+    background-color: rgba(38, 41, 61, 0.7) !important;
     position: absolute;
-    right: 1.7em;
+    margin-top: 8px;
+    right: 0;
   }
   .main-menu ul li {
     border-bottom: 1px solid rgba(202, 204, 202, 0.6);
