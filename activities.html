@@ -140,13 +140,53 @@
               </tbody>
             </table>
           </div>
-          <div id="displaySelected">
+
+          <!-- <div id="displaySelected">
             <div id="result">
               <h4>My selected activities to enquire:</h4>
             </div>
             <div id="sendinfo">
               <input type="email" placeholder="johndoe@gmail.com" />
               <button>Get Info</button>
+            </div>
+          </div> -->
+
+          <div
+            class="modal fade"
+            id="myModal"
+            tabindex="-1"
+            aria-labelledby="exampleModalLabel"
+            aria-hidden="true"
+          >
+            <div class="modal-dialog">
+              <div class="modal-content">
+                <div id="displaySelected">
+                  <div class="modal-header">
+                    <h4>My selected activities to enquire:</h4>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="result"></div>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                    <button type="button" class="btn btn-primary">
+                      Save changes
+                    </button>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -161,6 +201,7 @@
             <div class="col-sm-6 col-md-4 col-lg-2 my-sm-3 my-lg-0">
               <li class="partner">
                 <img
+                  class="rounded"
                   src="images/partners/partner-bustour.png"
                   alt="Partner Bus Tours"
                 />
@@ -170,6 +211,7 @@
             <div class="col-sm-6 col-md-4 col-lg-2 my-sm-3 my-lg-0">
               <li class="partner">
                 <img
+                  class="rounded"
                   src="images/partners/partner-cabinrental.png"
                   alt="Partner Cabin Rental"
                 />
@@ -179,6 +221,7 @@
             <div class="col-sm-6 col-md-4 col-lg-2 my-sm-3 my-lg-0">
               <li class="partner">
                 <img
+                  class="rounded"
                   src="images/partners/partner-campingadv.png"
                   alt="Partner Camping Adventure"
                 />
@@ -188,6 +231,7 @@
             <div class="col-sm-6 col-md-4 col-lg-2 my-sm-3 my-lg-0">
               <li class="partner">
                 <img
+                  class="rounded"
                   src="images/partners/partner-collegetours.png"
                   alt="Partner College Tours"
                 />
@@ -197,6 +241,7 @@
             <div class="col-sm-6 col-md-4 col-lg-2 my-sm-3 my-lg-0">
               <li class="partner">
                 <img
+                  class="rounded"
                   src="images/partners/partner-rentalbike.png"
                   alt="Partner Bike Rentals"
                 />
@@ -206,6 +251,7 @@
             <div class="col-sm-6 col-md-4 col-lg-2 my-sm-3 my-lg-0">
               <li class="partner">
                 <img
+                  class="rounded"
                   src="images/partners/partner-tourgroup.png"
                   alt="Partner Tour Group"
                 />
