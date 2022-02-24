@@ -1,44 +1,10 @@
-// $(document).ready(function () {
-//   $("td").click(function () {
-//     var act = $(this).text();
-
-//     if (act != "Not Available") {
-//       $(this).toggleClass("tdHighlight");
-//     }
-
-//     if ($(this).hasClass("tdHighlight")) {
-//       // $("#displaySelected").css("visibility", "visible"); //remove this for modal
-//       $("#displaySelected").css("margin top", "2em");
-//       $("#result").append("<p>" + act + actLocation + "</p>");
-//       $("#myModal").modal("show"); //added this for modal
-//     } else {
-//       $("#result p:contains(" + act + ")").remove();
-//       $("#myModal").modal("show");   //added this for modal
-
-//       if ($("#result").has("p").length == false) {
-//         // $("#displaySelected").css("visbility", "hiden"); //remove this for modal
-//         $("#displaySelected").css("margin-top", "0");
-//       }
-//     }
-//   });
-// });
-
 $(document).ready(function () {
   $("td").click(function () {
     var act = $(this).text();
-    
-    // var $th = $('table thead tr th').eq($(this).index());
-    // var loc = $(this)
-    //   .closest("tbody")
-    //   .find("> tr > th:eq(" + act + ")");
-    
-    var loc = $(this).closest('table').find("th").eq($(this).index()).text();
-
-    // var $th = $(act).closest("table").find("th").eq($(act).index());
+    var loc = $(this).closest("table").find("th").eq($(this).index()).text();
 
     if (act != "Not Available") {
       $(this).toggleClass("tdHighlight");
-  
 
       if ($(this).hasClass("tdHighlight")) {
         // $("#displaySelected").css("visibility", "visible"); //remove this for modal
