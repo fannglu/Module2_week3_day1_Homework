@@ -31,8 +31,8 @@ $(document).ready(function () {
     // var loc = $(this)
     //   .closest("tbody")
     //   .find("> tr > th:eq(" + act + ")");
-
-    var loc = $(this).closest('tbody').prev('thead').find('th').text();
+    
+    var loc = $(this).closest('table').find("th").eq($(this).index()).text();
 
     // var $th = $(act).closest("table").find("th").eq($(act).index());
 
