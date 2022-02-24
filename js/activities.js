@@ -26,33 +26,34 @@
 $(document).ready(function () {
   $("td").click(function () {
     var act = $(this).text();
-   
-    var loc = $(this).closest('th').text();
+    
+    // var $th = $('table thead tr th').eq($(this).index());
+    // var loc = $(this)
+    //   .closest("tbody")
+    //   .find("> tr > th:eq(" + act + ")");
+
+    var loc = $(this).closest('tbody').prev('thead').find('th').text();
+
+    // var $th = $(act).closest("table").find("th").eq($(act).index());
 
     if (act != "Not Available") {
       $(this).toggleClass("tdHighlight");
-    };
-    
-    if(act == "Not Available") {
-      $(this).$('#myModal').modal('hide');
-    };
+  
 
-    if ($(this).hasClass("tdHighlight")) {
-      // $("#displaySelected").css("visibility", "visible"); //remove this for modal
-      $("#displaySelected").css("margin top", "2em");
-      $("#result").append("<p>" + act + " at " + loc + "</p>");
-      $("#myModal").modal("show"); //added this for modal
-    } else {
-      $("#result p:contains(" + act + ")").remove();
-      $("#myModal").modal("show"); //added this for modal
+      if ($(this).hasClass("tdHighlight")) {
+        // $("#displaySelected").css("visibility", "visible"); //remove this for modal
+        $("#displaySelected").css("margin top", "2em");
+        $("#result").append("<p>" + act + " at " + loc + "</p>");
+        $("#myModal").modal("show"); //added this for modal
+      } else {
+        $("#result p:contains(" + act + ")").remove();
+        $("#myModal").modal("show"); //added this for modal
 
-      if ($("#result").has("p").length == false) {
-        // $("#displaySelected").css("visbility", "hiden"); //remove this for modal
-        $("#displaySelected").css("margin-top", "0");
-        
-      };
-    };
-
-    
+        if ($("#result").has("p").length == false) {
+          // $("#displaySelected").css("visbility", "hiden"); //remove this for modal
+          $("#displaySelected").css("margin-top", "0");
+        }
+      }
+    }
   });
 });
